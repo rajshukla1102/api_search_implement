@@ -5,6 +5,9 @@ from datetime import datetime
 app = Flask(__name__)
 url = "https://dev.ylytic.com/ylytic/test"
 
+@app.route('/')
+def home():
+    return jsonify({'comments': "hello world"})
 
 def filter_comments(comments, search_params):
 
