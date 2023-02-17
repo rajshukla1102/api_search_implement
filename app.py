@@ -48,7 +48,3 @@ def search_comments():
     filtered_comments = filter_comments(comments, search_params)
 
     return jsonify({'comments': filtered_comments}), 200
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
